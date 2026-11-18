@@ -1,0 +1,33 @@
+# Environments & secrets
+.env
+.env.*
+!.env.example
+
+# PHP / CodeIgniter 4
+vendor/
+writable/logs/*
+!writable/logs/index.html
+writable/cache/*
+!writable/cache/index.html
+writable/session/*
+!writable/session/index.html
+writable/uploads/*
+!writable/uploads/index.html
+phpunit.xml
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+
+# Python / RAG Service
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDEs & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
