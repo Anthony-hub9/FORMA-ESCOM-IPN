@@ -1,0 +1,85 @@
+:root {
+  --ipn-guinda: #6C1D45;
+  --ipn-guinda-dark: #4E1331;
+  --escom-blue: #005A9C;
+  --bg-page: #F7F7F9;
+  --bg-surface: #FFFFFF;
+  --text-main: #1F2937;
+  --text-muted: #6B7280;
+  --border-color: #E5E7EB;
+  --radius: 8px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header {
+  background-color: var(--ipn-guinda);
+  color: #FFFFFF;
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.site-header .subtitle {
+  margin: 0.25rem 0 0;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+.card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--ipn-guinda);
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: var(--ipn-guinda-dark);
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    padding: 1rem 0;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
